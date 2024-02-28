@@ -1,3 +1,25 @@
+
+<!-- Evitar lo siguiente
+  <nav>
+  <li><a href="/home">Inicio</a></li>
+  <li><a href="/pagina1">pagina1</a></li>
+  <li><a href="/pagina2">pagina2</a></li>
+</nav> -->
+
+<!-- Opción 1 -->
+<nav>
+  <li><a [routerLink]="['home']">Inicio</a></li>
+  <li><a [routerLink]="['pagina1']">Página 1</a></li>
+  <li><a [routerLink]="['pagina2']">Página 2</a></li>
+</nav>
+
+<!-- Opción 2 -->
+<nav>
+  <li><a routerLink="home">Inicio</a></li>
+  <li><a routerLink="pagina1">Página 1</a></li>
+  <li><a routerLink="pagina2">Página 2</a></li>
+</nav>
+
 <main class="main">
   <div class="content">
     <h1>Hello, {{ title }}</h1>
